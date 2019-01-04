@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('scraps', function(){
+    return view('scraps.index');
+});
