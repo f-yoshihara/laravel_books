@@ -12,4 +12,7 @@ class ScrapsController extends Controller
         $scraps = Scrap::orderBy('created_at', 'asc')->get();
         return view('scraps.index', ['scraps' => $scraps]);
     }
+    public function new(){
+        return view('scraps.new');
+    }
 }
