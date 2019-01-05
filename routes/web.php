@@ -16,5 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('scraps', function(){
-    return view('scraps.index');
+    return view('scraps.index', ['scraps' => 'test']);
 });
+
+// Route::get('scraps', 'ScrapsController@index');
