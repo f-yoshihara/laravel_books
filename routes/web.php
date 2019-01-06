@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('scraps', 'ScrapsController@index');
+Route::get('users', 'UserController@index');
+Route::get('users/new', 'UserController@new');
+Route::post('users', 'UserController@create');
+
+Route::get ('scraps', 'ScrapsController@index');
+Route::get('scraps/new', 'ScrapsController@new');
+Route::post('scraps', 'ScrapsController@create');
